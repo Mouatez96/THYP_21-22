@@ -22,7 +22,9 @@
          var url = "data/resource_templates_3.json";
          d3.json(url, function (json) {
             console.log(json)
-            console.log("id : "+json["o:resource_template_property"]+"  --  "+json["o:label"])
+             for(var i=0; i<json.length; i++) {
+                console.log("id : "+json["o:resource_template_property"][i]+"  --  "+json["o:label"])
+            }
         });
     </script>
 
