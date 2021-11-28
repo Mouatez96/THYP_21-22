@@ -23,7 +23,7 @@
          d3.json(url, function (json) {
             console.log(json)
             for(var i=0; i<json.length; i++) {
-                console.log("id : "+json[i]["o:id"]+"  --  "+json[i]["o:label"])
+                console.log("id : "+json[i]["o:resource_template_property"]+"  --  "+json[i]["o:label"])
             }
         });
     </script>
