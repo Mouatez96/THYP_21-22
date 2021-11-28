@@ -14,6 +14,9 @@
         var url = "data/resource_templates.json";
         d3.json(url, function (json) {
             console.log(json)
+            for(var i=0; i<json.length; i++) {
+                console.log(json[i].context)
+            }
         });
     </script>
 
